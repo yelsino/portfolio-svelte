@@ -9,7 +9,7 @@
 	class="selection:bg-fuchsia-200 selection:text-black max-w-5xl mx-auto relative flex flex-col mt-24 px-10 gap-y-10 pb-10  w-full"
 >
 	<div>
-		<span>Lunes 25 de Mayo 2023</span>
+		<span class="text-gray-500">Lunes 25 de Mayo 2023</span>
 		<p class="bg-black text-white w-full py-8 text-4xl px-5 font-bold ">{data.title}</p>
 	</div>
 

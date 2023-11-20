@@ -1,12 +1,16 @@
+<script lang="ts">
+	export let handleModal:any;
+</script>
+
 <nav
 	class="w-full fixed max-w-5xl mx-auto py-3 z-30 flex justify-between items-center px-10  bg-white font-kodchasan top-0  "
 >
-	<div class="flex gap-x-5 items-center">
+	<!-- <div class="flex gap-x-5 items-center"> -->
 		<ul class="font-bold text-lg">
 			<a href="/">Yelsiño</a>
 		</ul>
 
-		<div
+		<button on:click={handleModal} 
 			class="flex items-center gap-x-3 bg-color_pink2 px-2 py-1 rounded-lg font-dm-sans font-medium cursor-pointer select-none text-color_pink1"
 		>
 			<svg
@@ -23,14 +27,18 @@
 			</svg>
 			<p>Buscar</p>
 			<div class=" rounded-lg px-2 border-[1.4px] border-color_pink1 text-sm">Ctrl k</div>
-		</div>
-	</div>
-	<div class="flex gap-x-3 items-center">
+		</button>
+	<!-- </div> -->
+
+</nav>
+
+
+
+	<!-- <div class="flex gap-x-3 items-center">
 		<button class="text-color_pink1 tracking-tight font-medium">Iniciar sesion</button>
 		<a
 			href="/blog"
 			class="rounded-full px-4 py-1 bg-black text-white  ease-in-out duration-300 font-kodchasan font-bold"
 			>Subscribe</a
 		>
-	</div>
-</nav>
+	</div> -->
