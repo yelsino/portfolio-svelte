@@ -146,19 +146,21 @@
 	];
 </script>
 
-<div class="flex flex-col gap-y-5">
+<div class="flex flex-col gap-y-2">
 	<!-- Repeat the following structure for your content -->
 	{#each articles as article}
-		<article>
-			<div class="flex items-center gap-x-3">
-				<div class="bg-orange-500 w-16 h-16 -translate-y-1"></div>
-				<div>
-					<h3 class="font-bold text-2xl">{article.title}</h3>
-					<p class="font-mono text-lg text-gray-700">
-						{article.description}
-					</p>
+		<a href="/blog/{article.id}" class="cursor-pointer">
+			<article class="cursor-default bg-gray-50 py-5 px-3">
+				<div class="flex items-center gap-x-3">
+					<div class="bg-orange-500 w-16 h-16 -translate-y-1"></div>
+					<div>
+						<h3 class="font-bold text-2xl">{article.title}</h3>
+						<p class="font-mono text-lg text-gray-700">
+							{article.description}
+						</p>
+					</div>
 				</div>
-			</div>
-		</article>
+			</article>
+		</a>
 	{/each}
 </div>

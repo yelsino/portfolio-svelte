@@ -35,7 +35,7 @@
 </script>
 
 <main
-	class="selection:bg-fuchsia-200 selection:text-black max-w-5xl mx-auto relative flex flex-col mt-28 px-10 gap-y-10"
+	class="selection:bg-fuchsia-200 selection:text-black max-w-5xl mx-auto relative flex flex-col mt-28 px-10 gap-y-10  pb-10"
 >
 	<section>
 		<h1 class="text-center font-kodchasan text-4xl font-black">
@@ -49,7 +49,7 @@
 	</section>
 
 	<section>
-		<div class="flex gap-x-3 mb-5">
+		<div class="flex gap-x-3 mb-10">
 			{#each filters as filter}
 				<label for={filter.id} class="flex items-center cursor-pointer">
 					<input
